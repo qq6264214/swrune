@@ -1,0 +1,68 @@
+{
+  "name": "swrune",
+  "version": "0.1.0",
+  "private": true,
+  "description": "魔灵召唤懒人符文评估器",
+  "author": "阿川",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "dev": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps",
+    "rebuild": "electron-rebuild -f -w sqlite3"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "aws-sdk": "^2.1140.0",
+    "axios": "^0.27.2",
+    "core-js": "^3.6.5",
+    "dns": "^0.2.2",
+    "electron-localstorage": "^1.0.5",
+    "electron-rebuild": "^3.2.5",
+    "element-ui": "^2.4.5",
+    "json2csv": "^5.0.6",
+    "mock-aws-s3": "^4.0.2",
+    "nan": "^2.1.0",
+    "nock": "^13.2.4",
+    "sqlite3": "^5.0.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "electron": "^9.0.0",
+    "electron-builder": "^23.0.3",
+    "electron-devtools-installer": "^3.1.0",
+    "electron-prebuilt": "^1.4.13",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-cli-plugin-electron-builder": "~2.0.0-rc.5",
+    "vue-cli-plugin-element": "~1.0.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
