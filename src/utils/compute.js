@@ -61,7 +61,7 @@ export function getRuneResult(orginalJson,computeGrindFlag,tWeightMap){
         if(r.belongMonId){
             r.belongMonName = monNameMap[r.belongMonId]
         }
-        testRuneQuality(rune)
+        // testRuneQuality(rune)
 
         result.push(r)
     }
